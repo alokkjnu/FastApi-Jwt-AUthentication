@@ -1,5 +1,5 @@
-🚀 Setup Instructions
-1. Create a Python Virtual Environment
+🚀 ## Setup Instructions
+### 1. Create a Python Virtual Environment
 
 You can create a virtual environment using either of the following methods:
 
@@ -24,13 +24,13 @@ On macOS/Linux:
     ```bash
     source env/bin/activate
 
-2. Install Required Dependencies
+### 2. Install Required Dependencies
 
 Install all dependencies listed in requirements.txt:
     ```bash
     pip install -r requirements.txt
 
-3. Generate Keys for JWT
+### 3. Generate Keys for JWT
 
 To securely sign JWTs, you need a pair of private and public RSA keys.
 
@@ -52,10 +52,10 @@ Extract the public key:
 
 ⚠️ Important: Store private.pem and public.pem files securely and do not commit them to version control.
 
-4. Create PostgreSQL Database
-    ```bash
-    Create a PostgreSQL database named authdb:
+### 4. Create PostgreSQL Database
 
+Create a PostgreSQL database named authdb:
+    ```bash
     CREATE DATABASE authdb;
 
 
@@ -65,7 +65,7 @@ Example connection URL:
 
 postgresql://<username>:<password>@localhost:5432/authdb
 
-5. Run the Application
+### 5. Run the Application
 
 Start the FastAPI application using Uvicorn:
     ```bash
@@ -76,7 +76,7 @@ Start the FastAPI application using Uvicorn:
 The application will now be available at:
 👉 http://localhost:8000
 
-🧠 Additional Notes
+🧠 ## Additional Notes
 
 Ensure your PostgreSQL instance is running and accessible.
 
@@ -84,7 +84,7 @@ You can customize the JWT authentication logic to fit your application’s requi
 
 The HTML templates can be modified to match your front-end design.
 
-🛠️ Tech Stack
+🛠️ ## Tech Stack
 
 FastAPI – Web framework
 
