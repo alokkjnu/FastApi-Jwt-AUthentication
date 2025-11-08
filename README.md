@@ -4,11 +4,13 @@
 You can create a virtual environment using either of the following methods:
 
 Using virtualenv:
+
     ```bash
     virtualenv env --python=python3
 
 
 Using venv (Python 3+):
+
     ```bash
     python3 -m venv env
 
@@ -16,11 +18,13 @@ Using venv (Python 3+):
 Activate the environment:
 
 On Windows:
+
     ```bash
     env\Scripts\activate
 
 
 On macOS/Linux:
+
     ```bash
     source env/bin/activate
 
@@ -55,6 +59,7 @@ Extract the public key:
 ### 4. Create PostgreSQL Database
 
 Create a PostgreSQL database named authdb:
+
     ```bash
     CREATE DATABASE authdb;
 
@@ -68,8 +73,8 @@ postgresql://<username>:<password>@localhost:5432/authdb
 ### 5. Run the Application
 
 Start the FastAPI application using Uvicorn:
-    ```bash
 
+    ```bash
     uvicorn main:app --reload
 
 
