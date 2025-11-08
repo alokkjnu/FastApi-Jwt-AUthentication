@@ -5,13 +5,11 @@ You can create a virtual environment using either of the following methods:
 
 Using virtualenv:
 
-    ```bash
     virtualenv env --python=python3
 
 
 Using venv (Python 3+):
 
-    ```bash
     python3 -m venv env
 
 
@@ -19,19 +17,17 @@ Activate the environment:
 
 On Windows:
 
-    ```bash
     env\Scripts\activate
 
 
 On macOS/Linux:
 
-    ```bash
     source env/bin/activate
 
 ### 2. Install Required Dependencies
 
 Install all dependencies listed in requirements.txt:
-    ```bash
+
     pip install -r requirements.txt
 
 ### 3. Generate Keys for JWT
@@ -45,12 +41,12 @@ Run the provided Python script gen_key.py, or
 Use the OpenSSL commands below:
 
 Generate a 2048-bit private key:
-    ```bash
+
     openssl genpkey -algorithm RSA -out private.pem -pkeyopt rsa_keygen_bits:2048
 
 
 Extract the public key:
-    ```bash
+
     openssl rsa -pubout -in private.pem -out public.pem
 
 
@@ -60,7 +56,6 @@ Extract the public key:
 
 Create a PostgreSQL database named authdb:
 
-    ```bash
     CREATE DATABASE authdb;
 
 
@@ -74,7 +69,6 @@ postgresql://<username>:<password>@localhost:5432/authdb
 
 Start the FastAPI application using Uvicorn:
 
-    ```bash
     uvicorn main:app --reload
 
 
